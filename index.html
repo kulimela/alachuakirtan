@@ -2,36 +2,50 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
-<!--<![endif]-->
+	<!--<![endif]-->
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<title>Festival of the Holy Name</title>
-		<meta name="description" content="Join together in celebration. Experience Kirtan. Chant and be happy!">
+		<meta
+			name="description"
+			content="Join together in celebration. Experience Kirtan. Chant and be happy!"
+		/>
 
 		<!-- Mobile Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
 
 		<!-- Web Fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+		<link
+			href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300&amp;subset=latin,latin-ext"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="http://fonts.googleapis.com/css?family=Raleway:700,400,300"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
 		<!-- Bootstrap core CSS -->
-		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
 
 		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
 
 		<!-- Plugins -->
-		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet" />
 
 		<!-- Worthy core CSS file -->
-		<link href="css/style.css?1542997931" rel="stylesheet">
+		<link href="css/style.css?1542997931" rel="stylesheet" />
 
 		<!-- Custom css -->
-		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet" />
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="config/config.js"></script>
 	</head>
 
 	<body class="no-trans page-index">
@@ -43,46 +57,48 @@
 		<!-- ================ -->
 		<div id="fb-root"></div>
 
-
 		<!-- header start -->
 		<!-- ================ -->
 		<header class="header fixed clearfix navbar navbar-fixed-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-
 						<!-- header-left start -->
 						<!-- ================ -->
 						<div class="header-left clearfix">
-
 							<!-- logo -->
 							<div class="logo smooth-scroll">
-								<a href="#banner"><img id="logo" width="181" height="60" src="images/fhn-center.png" alt="Festival of the Holy Name"></a>
+								<a href="#banner"
+									><img
+										id="logo"
+										width="181"
+										height="60"
+										src="images/fhn-center.png"
+										alt="Festival of the Holy Name"
+								/></a>
 							</div>
-
-
 						</div>
 						<!-- header-left end -->
-
 					</div>
 					<div class="col-md-8">
-
 						<!-- header-right start -->
 						<!-- ================ -->
 						<div class="header-right clearfix">
-
 							<!-- main-navigation start -->
 							<!-- ================ -->
 							<div class="main-navigation animated">
-
 								<!-- navbar start -->
 								<!-- ================ -->
 								<nav class="navbar navbar-default" role="navigation">
 									<div class="container-fluid">
-
 										<!-- Toggle get grouped for better mobile display -->
 										<div class="navbar-header">
-											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+											<button
+												type="button"
+												class="navbar-toggle"
+												data-toggle="collapse"
+												data-target="#navbar-collapse-1"
+											>
 												<span class="sr-only">Toggle navigation</span>
 												<span class="icon-bar"></span>
 												<span class="icon-bar"></span>
@@ -91,28 +107,27 @@
 										</div>
 
 										<!-- Collect the nav links, forms, and other content for toggling -->
-										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+										<div
+											class="collapse navbar-collapse scrollspy smooth-scroll"
+											id="navbar-collapse-1"
+										>
 											<ul class="nav navbar-nav navbar-right">
 												<li class="active"><a href="#banner">Home</a></li>
 												<li><a href="#about">About</a></li>
 												<li><a href="#schedule">Schedule</a></li>
 												<li><a href="audio.html">Audio</a></li>
-												<!-- <li><a href="#travel">Travel</a></li> -->
+												<li><a href="#travel">Travel</a></li>
 												<li><a href="#volunteer">Get Involved</a></li>
 												<li><a href="#contact">Contact</a></li>
 											</ul>
 										</div>
-
 									</div>
 								</nav>
 								<!-- navbar end -->
-
 							</div>
 							<!-- main-navigation end -->
-
 						</div>
 						<!-- header-right end -->
-
 					</div>
 				</div>
 			</div>
@@ -123,188 +138,298 @@
 		<!-- ================ -->
 		<div id="banner" class="banner">
 			<div class="banner-image"></div>
+			<script>
+				// Check if IS_LIVE is true before displaying the HTML
+				if (config.IS_LIVE) {
+					document.write(`
 			<div class="banner-video">
 				<div class="container">
 					<div class="iframeWrapper">
-						<iframe id="ytplayer" type="text/html" width="1170" height="568" src="https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3UXZWt_MUGn7XiDXt7n7TU8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+						<iframe
+							id="ytplayer"
+							type="text/html"
+							width="1170"
+							height="568"
+							src="https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3UXZWt_MUGn7XiDXt7n7TU8"
+							frameborder="0"
+							allowfullscreen="allowfullscreen"
+						></iframe>
 					</div>
-					<div class="object-non-visible banner-video-caption" data-animation-effect="fadeIn">
+					<div
+						class="object-non-visible banner-video-caption"
+						data-animation-effect="fadeIn"
+					>
 						<h1 class="text-left">Festival of the Holy Name</h1>
-						<h2 class="text-right">November 25–26, 2022</h2>
+						<h2 class="text-right">{{DATE}}</h2>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="banner-caption">
+					`);
+				} else {
+					document.write(`
+			<div class="banner-caption">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 object-non-visible" data-animation-effect="fadeIn">
 							<h1 class="text-center">Festival of the Holy Name</h1>
-							<h2 class="text-center">November 25–26, 2022</h2>
+							<h2 class="text-center">{{DATE}}</h2>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
+					`);
+				}
+			</script>
 		</div>
 		<!-- banner end -->
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+		<div
+			class="section clearfix object-non-visible"
+			data-animation-effect="fadeIn"
+		>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h1 id="about" class="title text-center">About <span>Festival of the Holy Name</span></h1>
-						<p class="lead text-center">Join together in celebration and immerse yourself in transcendental sound vibration.</p>
+						<h1 id="about" class="title text-center">
+							About <span>Festival of the Holy Name</span>
+						</h1>
+						<p class="lead text-center">
+							Join together in celebration and immerse yourself in
+							transcendental sound vibration.
+						</p>
 						<div class="space"></div>
 						<div class="row">
 							<div class="col-md-6">
-								<img src="images/section-image-1.jpg" alt="">
+								<img src="images/section-image-1.jpg" alt="" />
 								<div class="space"></div>
 							</div>
 							<div class="col-md-6">
 								<!-- <p>We look forward to singing, dancing, and feasting  together with all of you. Of course, there will be certain safety protocols in place and registration will be required for all attendees. Details and registration form are <a target="_blank" href="https://forms.gle/tPPV8mNpdo9X6Rf8A">here.</a> <br><br>Let's Experience Kirtan together again!</p> -->
-								<p>Experience the maha-mantra and chant at the Festival of the Holy Name!</p>
+								<p>
+									Experience the maha-mantra and chant at the Festival of the
+									Holy Name!
+								</p>
 
-								<p>This festival is free as a service to and celebration of the holy names of the Lord and the community. If you'd like to volunteer to assist with the festival in any way, we'd love your help and involvement:</p>
+								<p>
+									This festival is free as a service to and celebration of the
+									holy names of the Lord and the community. If you'd like to
+									volunteer to assist with the festival in any way, we'd love
+									your help and involvement:
+								</p>
 								<ul class="list-unstyled">
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>decorations</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>set up</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>technical assistance</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>kids camp</li>
-									<li><i class="fa fa-caret-right pr-10 text-colored"></i>donations</li>
+									<li>
+										<i class="fa fa-caret-right pr-10 text-colored"></i
+										>decorations
+									</li>
+									<li>
+										<i class="fa fa-caret-right pr-10 text-colored"></i>set up
+									</li>
+									<li>
+										<i class="fa fa-caret-right pr-10 text-colored"></i
+										>technical assistance
+									</li>
+									<li>
+										<i class="fa fa-caret-right pr-10 text-colored"></i>kids
+										camp
+									</li>
+									<li>
+										<i class="fa fa-caret-right pr-10 text-colored"></i
+										>donations
+									</li>
 								</ul>
-								<p>Thank you to those who made last year's festival a success.</p>
+								<p>
+									Thank you to those who made last year's festival a success.
+								</p>
 							</div>
 						</div>
 						<div class="space"></div>
 						<div class="col-md-12">
-						<h1 id="schedule" class="title text-center">Festival 2022</h1>
+							<h1 id="schedule" class="title text-center">Festival {{YEAR}}</h1>
 
-						<div class="row">
-							<div class="col-md-6">
-								<h2>Video</h2>
-								<div class="title text-center">
-									<div class="iframeWrapper">
-											<iframe id="ytplayer" type="text/html" width="1170" height="568" src="https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3UXZWt_MUGn7XiDXt7n7TU8" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+							<div class="row">
+								<div class="col-md-6">
+									<h2>Video</h2>
+									<div class="title text-center">
+										<div class="iframeWrapper">
+											<iframe
+												id="ytplayer"
+												type="text/html"
+												width="1170"
+												height="568"
+												src="https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3UXZWt_MUGn7XiDXt7n7TU8"
+												frameborder="0"
+												allowfullscreen="allowfullscreen"
+											></iframe>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<h2>Schedule</h2>
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<!-- <p>To be announced.</p> -->
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingOne">
-											<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-													Friday, November 25, 2022
-												</a>
-											</h4>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-											<div class="panel-body">
-<!-- insert schedule for day 1 here -->
-<table style="width: 100%">
-  <colgroup><col style="width: 16%">
-  <col style="width: 84%">
-  </colgroup><tbody>
-    <tr><td>10:00 AM</td><td>Nagaraja</td></tr>
-    <tr><td>10:45 AM</td><td>Havi</td></tr>
-    <tr><td>11:30 AM</td><td>Saranagati Dhama</td></tr>
-    <tr><td>12:15 PM</td><td>Govinda</td></tr>
-    <tr><td>12:45 PM</td><td>Advaita Acarya</td></tr>
-    <tr><td>1:15 PM</td><td>Amrita Keli</td></tr>
-    <tr><td>1:45 PM</td><td>Kids Kirtan</td></tr>
-    <tr><td>2:15 PM</td><td>Bhakti House Orlando</td></tr>
-    <tr><td>2:45 PM</td><td>Brihan &amp; Mahesh</td></tr>
-    <tr><td>3:15 PM</td><td>Jagannath Kirtan</td></tr>
-    <tr><td>4:00 PM</td><td>Krishna Kisora</td></tr>
-    <tr><td>4:45 PM</td><td>Sacisuta</td></tr>
-    <tr><td>5:30 PM</td><td>Gauravani</td></tr>
-    <tr><td>6:15 PM</td><td>Kalindi</td></tr>
-    <tr><td>7:00 PM</td><td>Dhanya Gaurangi</td></tr>
-    <tr><td>8:00 PM</td><td>Amala Harinam</td></tr>
-  </tbody>
-</table>
+								<div class="col-md-6">
+									<h2>Schedule</h2>
+									<div
+										class="panel-group"
+										id="accordion"
+										role="tablist"
+										aria-multiselectable="true"
+									>
+										<script>
+											if (!config.HAS_SCHEDULE) {
+												document.write(`
+											<p>To be announced…</p>
+												`);
+											} else {
+												document.write(`
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a
+														data-toggle="collapse"
+														data-parent="#accordion"
+														href="#collapseOne"
+														aria-expanded="true"
+														aria-controls="collapseOne"
+													>
+														{{DAY1}}
+													</a>
+												</h4>
+											</div>
+											<div
+												id="collapseOne"
+												class="panel-collapse collapse in"
+												role="tabpanel"
+												aria-labelledby="headingOne"
+											>
+												<div class="panel-body">
+													<!-- insert schedule for day 1 here -->
+													<div id="day1Container" data-day="day1"></div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-													Saturday, November 26, 2022
-												</a>
-											</h4>
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body">
-<!-- insert schedule for day 2 here -->
-<table style="width: 100%">
-  <colgroup><col style="width: 16%">
-  <col style="width: 84%">
-  </colgroup><tbody>
-    <tr><td>10:00 AM</td><td>Mahatma</td></tr>
-    <tr><td>10:45 AM</td><td>Rucira</td></tr>
-    <tr><td>11:30 AM</td><td>Vrindavan</td></tr>
-    <tr><td>12:15 PM</td><td>Syama Darsini</td></tr>
-    <tr><td>12:45 PM</td><td>Nimai</td></tr>
-    <tr><td>1:15 PM</td><td>Nistha</td></tr>
-    <tr><td>1:45 PM</td><td>Justin</td></tr>
-    <tr><td>2:15 PM</td><td>Asta-sakhi</td></tr>
-    <tr><td>2:45 PM</td><td>Mitrasena</td></tr>
-    <tr><td>3:45 PM</td><td>Revati &amp; Kairava</td></tr>
-    <tr><td>4:15 PM</td><td>Radharani-lila</td></tr>
-    <tr><td>5:00 PM</td><td>Amala Kirtan</td></tr>
-    <tr><td>5:45 PM</td><td>Bhadra</td></tr>
-    <tr><td>6:45 PM</td><td>Thakura</td></tr>
-    <tr><td>7:30 PM</td><td>Nadiya Mani</td></tr>
-  </tbody>
-</table>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+													<a
+														class="collapsed"
+														data-toggle="collapse"
+														data-parent="#accordion"
+														href="#collapseTwo"
+														aria-expanded="false"
+														aria-controls="collapseTwo"
+													>
+														{{DAY2}}
+													</a>
+												</h4>
+											</div>
+											<div
+												id="collapseTwo"
+												class="panel-collapse collapse"
+												role="tabpanel"
+												aria-labelledby="headingTwo"
+											>
+												<div class="panel-body">
+													<!-- insert schedule for day 2 here -->
+													<div id="day2Container" data-day="day2"></div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<!-- <div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="headingTwo">
-											<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-													Sunday, Novemer 27, 2022
-												</a>
-											</h4>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-											<div class="panel-body"> -->
-<!-- insert schedule for day 3 here -->
-<!-- <table style="width: 100%">
-  <colgroup><col style="width: 16%">
-  <col style="width: 84%">
-  </colgroup><tbody>
-    <tr><td>10:00 AM</td><td>Closing Ceremony</td></tr>
-    <tr><td>2:00 PM</td><td>End</td></tr>
-  </tbody>
-</table>
+												`);
+											}
+										</script>
+										<script>
+											if (config.HAS_SCHEDULE && config.HAS_SUNDAY) {
+												document.write(`
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+													<a
+														class="collapsed"
+														data-toggle="collapse"
+														data-parent="#accordion"
+														href="#collapseThree"
+														aria-expanded="false"
+														aria-controls="collapseThree"
+													>
+														{{DAY3}}
+													</a>
+												</h4>
 											</div>
-										</div> -->
+											<div
+												id="collapseThree"
+												class="panel-collapse collapse"
+												role="tabpanel"
+												aria-labelledby="headingTwo"
+											>
+												<div class="panel-body">
+													<!-- insert schedule for day 3 here -->
+													<div id="day3Container" data-day="day3"></div>
+												</div>
+											</div>
+										</div>
+												`);
+											}
+										</script>
 									</div>
 								</div>
-								<div class="row" style="clear: both;">
+								<div class="row" style="clear: both">
 									<div class="col-md-6">
 										<h2>Connect</h2>
-										<p>To receive Festival of the Holy Name updates, like our Facebook page:</p>
-										<div class="fb-page" data-href="https://www.facebook.com/festivaloftheholyname" data-width="500" data-height="70" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+										<p>
+											To receive Festival of the Holy Name updates, like our
+											Facebook page:
+										</p>
+										<div
+											class="fb-page"
+											data-href="https://www.facebook.com/festivaloftheholyname"
+											data-width="500"
+											data-height="70"
+											data-small-header="true"
+											data-adapt-container-width="true"
+											data-hide-cover="false"
+											data-show-facepile="true"
+											data-show-posts="true"
+										>
 											<div class="fb-xfbml-parse-ignore">
-												<blockquote cite="https://www.facebook.com/festivaloftheholyname"><a href="https://www.facebook.com/festivaloftheholyname">Festival of the Holy Name</a></blockquote>
+												<blockquote
+													cite="https://www.facebook.com/festivaloftheholyname"
+												>
+													<a
+														href="https://www.facebook.com/festivaloftheholyname"
+														>Festival of the Holy Name</a
+													>
+												</blockquote>
+											</div>
 										</div>
-									</div>
 									</div>
 									<div class="col-md-6">
 										<h2>Donate</h2>
-										<p>Donate to the 2022 Festival of the Holy Name below:</p>
-										<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-											<input type="hidden" name="cmd" value="_s-xclick">
-											<input type="hidden" name="hosted_button_id" value="GM3EMAR3WFN52">
-											<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+										<p>
+											Donate to the {{YEAR}} Festival of the Holy Name below:
+										</p>
+										<form
+											action="https://www.paypal.com/cgi-bin/webscr"
+											method="post"
+										>
+											<input type="hidden" name="cmd" value="_s-xclick" />
+											<input
+												type="hidden"
+												name="hosted_button_id"
+												value="GM3EMAR3WFN52"
+											/>
+											<input
+												type="image"
+												src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+												border="0"
+												name="submit"
+												alt="PayPal - The safer, easier way to pay online!"
+											/>
+											<img
+												alt=""
+												border="0"
+												src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+												width="1"
+												height="1"
+											/>
 										</form>
 									</div>
 								</div>
@@ -321,27 +446,40 @@
 		<!-- section start -->
 		<!-- ================ -->
 		<div class="section translucent-bg bg-image-1 blue">
-				<div class="container object-non-visible" data-animation-effect="fadeIn">
-				<h1 id="travel"  class="text-center title">Travel</h1>
+			<div class="container object-non-visible" data-animation-effect="fadeIn">
+				<h1 id="travel" class="text-center title">Travel</h1>
 				<div class="space"></div>
-
 
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="media">
 							<div class="media-body text-left">
 								<h4 class="media-heading">Airports</h4>
-								<p>The nearest airports are Gainesville (approx. 20 min.), Jackonsville (approx. 90 min.), Orlando (approx. 2 hrs.), Tampa (approx. 2 hrs.)</p>
+								<p>
+									The nearest airports are Gainesville (approx. 20 min.),
+									Jackonsville (approx. 90 min.), Orlando (approx. 2 hrs.),
+									Tampa (approx. 2 hrs.)
+								</p>
 							</div>
 						</div>
 						<div class="media">
 							<div class="media-body text-left">
 								<h4 class="media-heading">Location Address</h4>
-								<p>ISKCON of Alachua / Hare Krishna Temple<br />17306 NW 112th Blvd., Alachua, Florida 32615<br />(386) 462-2017</p>
+								<p>
+									ISKCON of Alachua / Hare Krishna Temple<br />17306 NW 112th
+									Blvd., Alachua, Florida 32615<br />(386) 462-2017
+								</p>
 							</div>
-              <div class="iframeWrapper">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.778288977933!2d-82.46564299999999!3d29.81294900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8b12f6afb7673%3A0xd1c68c0c9bb7e894!2sHare+Krishna+Temple!5e0!3m2!1sen!2sus!4v1441567555073" width="555" height="350" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
-            </div>
+							<div class="iframeWrapper">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3461.778288977933!2d-82.46564299999999!3d29.81294900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8b12f6afb7673%3A0xd1c68c0c9bb7e894!2sHare+Krishna+Temple!5e0!3m2!1sen!2sus!4v1441567555073"
+									width="555"
+									height="350"
+									frameborder="0"
+									style="border: 0"
+									allowfullscreen="allowfullscreen"
+								></iframe>
+							</div>
 						</div>
 					</div>
 					<div class="space visible-xs"></div>
@@ -349,28 +487,61 @@
 						<div class="media">
 							<div class="media-body">
 								<h4 class="media-heading">Accommodations</h4>
-								<p>The following hotels are only a few minutes driving away from the festival location.</p>
-<p><strong>Hampton Inn & Suites</strong><br />
-(386) 315-8100<br />
-15930 Northwest 163rd Lane, Alachua, FL<br />
-<a href="https://www.hilton.com/en/hotels/gnvhxhx-hampton-suites-alachua-i75/">website</a></p>
-<p><strong>Holiday Inn Express & Suites</strong><br />
-(386) 518-6777<br />
-16367 NW 167th Blvd, Alachua, FL<br />
-<a href="https://www.ihg.com/holidayinnexpress/hotels/us/en/alachua/gnvac/hoteldetail">website</a></p>
-<p><strong>Quality Inn</strong><br />
-(386) 462-2244<br />
-15960 NW US Hwy 441, Alachua, FL<br />
-<a href="https://www.choicehotels.com/florida/alachua/quality-inn-hotels/fl682">website</a></p>
-<p><strong>Travelodge by Wyndham</strong><br />
-(386) 289-2654<br />
-15920 NW US Highway 441, Alachua, FL<br />
-<a href="https://www.wyndhamhotels.com/travelodge/alachua-florida/travelodge-alachua/overview">website</a></p>
+								<p>
+									The following hotels are only a few minutes driving away from
+									the festival location.
+								</p>
+								<p>
+									<strong>Hampton Inn & Suites</strong><br />
+									(386) 315-8100<br />
+									15930 Northwest 163rd Lane, Alachua, FL<br />
+									<a
+										href="https://www.hilton.com/en/hotels/gnvhxhx-hampton-suites-alachua-i75/"
+										>website</a
+									>
+								</p>
+								<p>
+									<strong>Holiday Inn Express & Suites</strong><br />
+									(386) 518-6777<br />
+									16367 NW 167th Blvd, Alachua, FL<br />
+									<a
+										href="https://www.ihg.com/holidayinnexpress/hotels/us/en/alachua/gnvac/hoteldetail"
+										>website</a
+									>
+								</p>
+								<p>
+									<strong>Quality Inn</strong><br />
+									(386) 462-2244<br />
+									15960 NW US Hwy 441, Alachua, FL<br />
+									<a
+										href="https://www.choicehotels.com/florida/alachua/quality-inn-hotels/fl682"
+										>website</a
+									>
+								</p>
+								<p>
+									<strong>Travelodge by Wyndham</strong><br />
+									(386) 289-2654<br />
+									15920 NW US Highway 441, Alachua, FL<br />
+									<a
+										href="https://www.wyndhamhotels.com/travelodge/alachua-florida/travelodge-alachua/overview"
+										>website</a
+									>
+								</p>
 
-							<p>Nearby Gainesville (about a 20 minute drive away) has many more options. Try the following websites to get decent prices: <a href="http://www.hotels.com/">hotels.com</a>, <a href="http://www.priceline.com/">priceline.com</a>, <a href="http://www.hotwire.com/">hotwire.com</a>.</p>
+								<p>
+									Nearby Gainesville (about a 20 minute drive away) has many
+									more options. Try the following websites to get decent prices:
+									<a href="http://www.hotels.com/">hotels.com</a>,
+									<a href="http://www.priceline.com/">priceline.com</a>,
+									<a href="http://www.hotwire.com/">hotwire.com</a>.
+								</p>
 
-<p><em>Note: Please bring warm clothes. The weather gets chilly in the evenings.</em></p>
-
+								<p>
+									<em
+										>Note: Please bring warm clothes. The weather gets chilly in
+										the evenings.</em
+									>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -379,39 +550,50 @@
 		</div>
 		<!-- section end -->
 
-
-
-
-
 		<!-- section start -->
 		<!-- ================ -->
 		<div class="section translucent-bg bg-image-2 pb-clear">
 			<div class="container object-non-visible" data-animation-effect="fadeIn">
 				<h1 id="volunteer" class="title text-center">Get Involved</h1>
 				<div class="separator"></div>
-				<p class="lead text-center">This festival would not be possible without the involvement of the entire community.</p>
-
+				<p class="lead text-center">
+					This festival would not be possible without the involvement of the
+					entire community.
+				</p>
 
 				<div class="row">
 					<div class="col-md-6">
-					<p>From the organizing team and the volunteers, to the kirtaniyas and cooks, the entire project is based on Vaisnava cooperation and assistance. We appreciate your feedback and support. Please let us know how we can help enhance your experience at next years festival.</p>
-					<p>Please contact us below to volunteer for a specific service.</p>
+						<p>
+							From the organizing team and the volunteers, to the kirtaniyas and
+							cooks, the entire project is based on Vaisnava cooperation and
+							assistance. We appreciate your feedback and support. Please let us
+							know how we can help enhance your experience at next years
+							festival.
+						</p>
+						<p>Please contact us below to volunteer for a specific service.</p>
 					</div>
 
 					<div class="col-md-6">
-					<p>There are many devotees that come from out of town every year for the Festival of the Holy Name. Please help them feel welcome to the community and encouraged to participate in the festival. Please contact us if you would help offering your support to any of these devotees in the form of opening your home for a place to stay, transportation accomodations, prasad, or contributing towards the expenses of devotees whos only occupation is spreading Krishna's name.</p>
+						<p>
+							There are many devotees that come from out of town every year for
+							the Festival of the Holy Name. Please help them feel welcome to
+							the community and encouraged to participate in the festival.
+							Please contact us if you would help offering your support to any
+							of these devotees in the form of opening your home for a place to
+							stay, transportation accomodations, prasad, or contributing
+							towards the expenses of devotees whos only occupation is spreading
+							Krishna's name.
+						</p>
 					</div>
 				</div>
 			</div>
 			<div class="space"></div>
 			<div class="space"></div>
-			</div>
-
+		</div>
 
 		<!-- footer start -->
 		<!-- ================ -->
 		<footer id="footer">
-
 			<!-- .footer start -->
 			<!-- ================ -->
 			<div class="footer section">
@@ -421,14 +603,45 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="footer-content">
-								<p class="large">For more information on the festival or to get involved, please send us a message using the contact form.</p>
+								<p class="large">
+									For more information on the festival or to get involved,
+									please send us a message using the contact form.
+								</p>
 								<ul class="list-icons">
-									<li><i class="fa fa-map-marker pr-10"></i>17306 NW 112th Blvd, Alachua, Florida 32615</li>
+									<li>
+										<i class="fa fa-map-marker pr-10"></i>17306 NW 112th Blvd,
+										Alachua, Florida 32615
+									</li>
 								</ul>
-								<p class="large">Follow us on <a target="_blank" href="https://www.facebook.com/festivaloftheholyname">Facebook</a> or watch kirtan videos on <a target="_blank" href="https://www.youtube.com/@festivaloftheholyname">Youtube</a>:</p>
+								<p class="large">
+									Follow us on
+									<a
+										target="_blank"
+										href="https://www.facebook.com/festivaloftheholyname"
+										>Facebook</a
+									>
+									or watch kirtan videos on
+									<a
+										target="_blank"
+										href="https://www.youtube.com/@festivaloftheholyname"
+										>Youtube</a
+									>:
+								</p>
 								<ul class="social-links">
-									<li class="facebook"><a target="_blank" href="https://www.facebook.com/festivaloftheholyname"><i class="fa fa-facebook"></i></a></li>
-									<li class="youtube"><a target="_blank" href="https://www.youtube.com/@festivaloftheholyname"><i class="fa fa-youtube"></i></a></li>
+									<li class="facebook">
+										<a
+											target="_blank"
+											href="https://www.facebook.com/festivaloftheholyname"
+											><i class="fa fa-facebook"></i
+										></a>
+									</li>
+									<li class="youtube">
+										<a
+											target="_blank"
+											href="https://www.youtube.com/@festivaloftheholyname"
+											><i class="fa fa-youtube"></i
+										></a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -437,21 +650,45 @@
 								<form role="form" id="footer-form">
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="name2">Name</label>
-										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+										<input
+											type="text"
+											class="form-control"
+											id="name2"
+											placeholder="Name"
+											name="name2"
+											required
+										/>
 										<i class="fa fa-user form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="email2">Email address</label>
-										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+										<input
+											type="email"
+											class="form-control"
+											id="email2"
+											placeholder="Enter email"
+											name="email2"
+											required
+										/>
 										<i class="fa fa-envelope form-control-feedback"></i>
 									</div>
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
+										<textarea
+											class="form-control"
+											rows="8"
+											id="message2"
+											placeholder="Message"
+											name="message2"
+											required
+										></textarea>
 										<i class="fa fa-pencil form-control-feedback"></i>
 									</div>
-									<div class="form-group g-recaptcha" data-sitekey="6Lf17skSAAAAAK0SvGCOTMRRY831P5xbLA_PYjIF"></div>
-									<input type="submit" value="Send" class="btn btn-default">
+									<div
+										class="form-group g-recaptcha"
+										data-sitekey="6Lf17skSAAAAAK0SvGCOTMRRY831P5xbLA_PYjIF"
+									></div>
+									<input type="submit" value="Send" class="btn btn-default" />
 								</form>
 							</div>
 						</div>
@@ -466,13 +703,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p class="text-center">Brought to you by <a href="https://www.facebook.com/kulimela" target="_blank">Kuli Mela Association</a> and <a href="http://alachuatemple.com/" target="_blank">ISKCON of Alachua</a></p>
+							<p class="text-center">
+								Brought to you by
+								<a href="https://www.facebook.com/kulimela" target="_blank"
+									>Kuli Mela Association</a
+								>
+								and
+								<a href="http://alachuatemple.com/" target="_blank"
+									>ISKCON of Alachua</a
+								>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- .subfooter end -->
-
 		</footer>
 		<!-- footer end -->
 
@@ -486,32 +731,64 @@
 		<script type="text/javascript" src="plugins/modernizr.js"></script>
 
 		<!-- Isotope javascript -->
-		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script
+			type="text/javascript"
+			src="plugins/isotope/isotope.pkgd.min.js"
+		></script>
 
 		<!-- Backstretch javascript -->
-		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script
+			type="text/javascript"
+			src="plugins/jquery.backstretch.min.js"
+		></script>
 
 		<!-- Appear javascript -->
 		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
 		<!-- ReCaptcha -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
 
 		<!-- Initialization of Plugins -->
 		<script type="text/javascript" src="js/template.js"></script>
 
 		<!-- Google Analytics -->
 		<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-19184111-1', 'auto');
-ga('send', 'pageview');
-    </script>
+			(function (i, s, o, g, r, a, m) {
+				i["GoogleAnalyticsObject"] = r;
+				(i[r] =
+					i[r] ||
+					function () {
+						(i[r].q = i[r].q || []).push(arguments);
+					}),
+					(i[r].l = 1 * new Date());
+				(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m);
+			})(
+				window,
+				document,
+				"script",
+				"//www.google-analytics.com/analytics.js",
+				"ga"
+			);
+			ga("create", "UA-19184111-1", "auto");
+			ga("send", "pageview");
+		</script>
 
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
 
+		<script type="text/javascript">
+			// Replace placeholders in the entire document. See cusotm.js
+			replacePlaceholders();
+
+			// Call the function to generate the table for each day
+			generateTable("day1Container");
+			generateTable("day2Container");
+			if (config.HAS_SCHEDULE && config.HAS_SUNDAY) {
+				generateTable("day3Container");
+			}
+		</script>
 	</body>
 </html>
