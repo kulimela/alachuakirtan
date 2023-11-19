@@ -64,13 +64,13 @@ async function generateTable(containerId) {
 	table.appendChild(tbody);
 
 	var schedule = await loadSchedule(day);
-  console.log('schedule', schedule);
+	console.log("schedule", schedule);
 	if (schedule) {
 		var regex = /(\d{1,2}:\d{2}\s*(?:AM|PM)?)\s+(.*)/g;
 
 		var match;
 		while ((match = regex.exec(schedule)) !== null) {
-      console.log('match', match[1], match[2]);
+			console.log("match", match[1], match[2]);
 			var time = match[1];
 			var performer = match[2].trim();
 
@@ -89,4 +89,14 @@ async function generateTable(containerId) {
 	} else {
 		console.error(`Schedule not found for ${day}.`);
 	}
+}
+
+// Replace placeholders in the entire document. See cusotm.js
+replacePlaceholders();
+
+// Call the function to generate the table for each day
+generateTable("day1Container");
+generateTable("day2Container");
+if (config.HAS_SCHEDULE && config.HAS_SUNDAY) {
+	generateTable("day3Container");
 }
