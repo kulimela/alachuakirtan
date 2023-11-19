@@ -1,7 +1,11 @@
 // Load schedule
 async function loadSchedule(day) {
 	try {
-		var response = await fetch(`config/${day}.txt`);
+    // Add a cache-busting parameter to the URL
+    const cacheBuster = new Date().getTime();
+    const url = `config/${day}.txt?cache=${cacheBuster}`;
+
+    const response = await fetch(url);
 		var schedule = await response.text();
 		return schedule;
 	} catch (error) {
