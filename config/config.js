@@ -7,6 +7,6 @@ var config = {
 		YEAR: "2023",
 	},
 	IS_LIVE: false,
-	HAS_SCHEDULE: false,
+	HAS_SCHEDULE: true,
 	HAS_SUNDAY: false,
 };
