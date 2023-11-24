@@ -30,16 +30,10 @@ a.button {
 	transition: all 0.2s ease-in-out;
 }
 
-@media (min-width: 1200px) {
-	.banner {
-		height: unset;
-	}
-	.banner-image {
-		min-height: calc(1200px * 0.7);
-	}
-	.banner-video {
-		min-height: calc(1200px * 0.7);
-	}
+/* Banner video */
+.banner-video .iframeWrapper {
+  max-height: calc(1170px * 0.568);
+  max-width: 1170px;
 }
 
 /* Schedule table */
