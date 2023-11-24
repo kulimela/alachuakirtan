@@ -1,5 +1,5 @@
 // Config
-var DEBUG = true;
+var DEBUG = false;
 
 // Load schedule
 async function loadSchedule(day) {
