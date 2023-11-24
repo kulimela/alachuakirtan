@@ -6,7 +6,7 @@ var config = {
 		DAY3: "Sunday, November 26, 2022",
 		YEAR: "2023",
 	},
-	IS_LIVE: false,
+	IS_LIVE: true,
 	HAS_SCHEDULE: true,
 	HAS_SUNDAY: false,
 };
