@@ -9,23 +9,60 @@ File Description: Place here your custom CSS styles
 */
 
 a.button {
-  display: block;
-  display: inline-block;
-  background-color: #f4a83b;
-  color: inherit;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 8px 15px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  min-width: 160px;
-  text-align: center;
-  border-radius: 0;
-  margin-top: 1em;
-  text-transform: uppercase;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+	display: block;
+	display: inline-block;
+	background-color: #f4a83b;
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 15px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	min-width: 160px;
+	text-align: center;
+	border-radius: 0;
+	margin-top: 1em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+	.banner {
+		height: unset;
+	}
+	.banner-image {
+		min-height: calc(1200px * 0.7);
+	}
+	.banner-video {
+		min-height: calc(1200px * 0.7);
+	}
+}
+
+/* Schedule table */
+.schedule {
+	border-collapse: separate;
+	border-spacing: 1em 0.5ex;
+	width: 100%;
+}
+.schedule colgroup col:nth-child(1) {
+	width: 20%;
+}
+.schedule colgroup col:nth-child(2) {
+	width: 80%;
+}
+.schedule tbody td:nth-child(1) {
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+	.schedule colgroup col:nth-child(1) {
+		width: 25%;
+	}
+	.schedule colgroup col:nth-child(2) {
+		width: 75%;
+	}
 }

@@ -1,15 +1,26 @@
+// Config
+var DEBUG = true;
+
 // Load schedule
 async function loadSchedule(day) {
 	try {
-    // Add a cache-busting parameter to the URL
-    const cacheBuster = new Date().getTime();
-    const url = `config/${day}.txt?cache=${cacheBuster}`;
+		// Add a cache-busting parameter to the URL
+		const cacheBuster = new Date().getTime();
+		const url = `config/${day}.txt?cache=${cacheBuster}`;
 
-    const response = await fetch(url);
+		const response = await fetch(url);
 		var schedule = await response.text();
 		return schedule;
 	} catch (error) {
-		console.error(`Error loading schedule for ${day}:`, error);
+		if (DEBUG) {
+			return `
+        12:00 PM Welcome
+        12:05 PM Opening Remarks
+        12:10 PM Keynote
+      `;
+		} else {
+			console.error(`Error loading schedule for ${day}:`, error);
+		}
 		return null;
 	}
 }
@@ -26,10 +37,26 @@ function walk(node, config) {
 		for (var i = 0; i < node.childNodes.length; i++) {
 			walk(node.childNodes[i], config);
 		}
+
+		// Replace attributes of the element
+		for (var i = 0; i < node.attributes.length; i++) {
+			replaceAttribute(node, node.attributes[i], config);
+		}
 	} else if (node.nodeType === 3) {
 		// Text node
 		replaceText(node, config);
 	}
+}
+
+// Replace placeholders in an attribute
+function replaceAttribute(element, attribute, config) {
+	var value = attribute.value;
+
+	var replacedValue = value.replace(/\{\{([^}]+)\}\}/g, function (match, p1) {
+		return config.placeholders[p1] || match;
+	});
+
+	element.setAttribute(attribute.name, replacedValue);
 }
 
 // Replace placeholders in a text node
@@ -52,14 +79,12 @@ async function generateTable(containerId) {
 	var day = tableContainer.dataset.day; // Get day from data-day attribute
 
 	var table = document.createElement("table");
-	table.style.width = "100%";
+	table.className = "schedule";
 	tableContainer.appendChild(table);
 
 	var colgroup = document.createElement("colgroup");
 	var col1 = document.createElement("col");
-	col1.style.width = "16%";
 	var col2 = document.createElement("col");
-	col2.style.width = "84%";
 	colgroup.appendChild(col1);
 	colgroup.appendChild(col2);
 	table.appendChild(colgroup);
@@ -68,13 +93,11 @@ async function generateTable(containerId) {
 	table.appendChild(tbody);
 
 	var schedule = await loadSchedule(day);
-	console.log("schedule", schedule);
 	if (schedule) {
 		var regex = /(\d{1,2}:\d{2}\s*(?:AM|PM)?)\s+(.*)/g;
 
 		var match;
 		while ((match = regex.exec(schedule)) !== null) {
-			console.log("match", match[1], match[2]);
 			var time = match[1];
 			var performer = match[2].trim();
 
@@ -95,7 +118,7 @@ async function generateTable(containerId) {
 	}
 }
 
-// Replace placeholders in the entire document. See cusotm.js
+// Replace placeholders in the entire document
 replacePlaceholders();
 
 // Call the function to generate the table for each day
