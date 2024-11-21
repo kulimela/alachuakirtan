@@ -9,5 +9,5 @@ var config = {
 	},
 	IS_LIVE: false,
 	HAS_SCHEDULE: false,
-	HAS_SUNDAY: false,
+	HAS_SUNDAY: true,
 };
