@@ -8,6 +8,6 @@ var config = {
 		YOUTUBE: "https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3XkmP-_Xnn6hr9gNXA6B6ph",
 	},
 	IS_LIVE: false,
-	HAS_SCHEDULE: false,
+	HAS_SCHEDULE: true,
 	HAS_SUNDAY: true,
 };
