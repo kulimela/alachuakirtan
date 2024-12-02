@@ -56,7 +56,11 @@ alachuakirtan/
    Using Python (recommended):
 
    ```bash
+<<<<<<< HEAD
    # If you have Python 3:
+=======
+   # If you have Python 3 (which you do):
+>>>>>>> e903c8ed6cf59be2d55871077d41c4fbde7b01e9
    python -m http.server 8000
    ```
 
