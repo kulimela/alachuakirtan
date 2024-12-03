@@ -1,124 +1,145 @@
-# Alachua Kirtan Website
+# Festival of the Holy Name Website
 
-Source code for [alachuakirtan.com](https://alachuakirtan.com) - Festival of the Holy Name website.
+[![License: CC BY 3.0](https://img.shields.io/badge/License-CC_BY_3.0-lightgrey.svg)](https://creativecommons.org/licenses/by/3.0/)
 
-## Project Overview
+This is the official website for the Festival of the Holy Name event held in Alachua, Florida. The website provides information about the festival, schedule, travel details, and ways to get involved.
 
-This website serves as the online presence for the Festival of the Holy Name, providing information about kirtan events, schedules, and ways to get involved in the community.
+## Features
 
-## Technology Stack
+- Event information and about section
+- Festival schedule display (when available)
+- Travel and accommodation information
+- Contact form for inquiries
+- Donation capabilities through PayPal
+- Social media integration (Facebook and YouTube)
+
+## Prerequisites
+
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Local development server (optional, for development)
+- Basic understanding of HTML/CSS/JavaScript (for development)
+
+## Technical Stack
 
 - HTML5
 - CSS3
-- Modern JavaScript (ES6+)
-- Bootstrap 5 Framework
+- JavaScript
+- Bootstrap for responsive design
 - Font Awesome for icons
-- Google Fonts
-- Mobile-first responsive design
-- Modern browser compatibility
-
-## Recent Updates
-
-- Upgraded from Bootstrap 3 to Bootstrap 5 for improved performance and modern components
-- Modernized JavaScript codebase with ES6+ features
-- Enhanced mobile responsiveness and browser compatibility
-- Improved overall performance and user experience
+- Google Fonts integration
+- jQuery for animations and interactions
 
 ## Project Structure
 
 ```curl
 alachuakirtan/
+├── index.html          # Main entry point
 ├── audio.html          # Audio content page
-├── bootstrap/          # Bootstrap framework files
-├── config/             # Configuration files
 ├── css/               # Stylesheet files
-├── fonts/             # Font files including Font Awesome
-├── images/            # Image assets
+│   ├── animations.css  # Animation styles
+│   ├── style.css      # Main styles
+│   └── custom.css     # Custom overrides
 ├── js/                # JavaScript files
-├── plugins/           # jQuery and other plugin files
-├── index.html         # Main landing page
-├── singers.xhtml      # Singers information page
-└── style.css          # Custom styles
+│   ├── custom.js      # Custom functionality
+│   └── template.js    # Template scripts
+├── config/            # Configuration
+│   └── config.js      # Site configuration
+├── images/            # Image assets
+└── fonts/             # Font files
 ```
 
-## Setup for Local Development
+## Configuration
+
+The website uses a configuration file (`config/config.js`) to manage dynamic content such as:
+
+- Schedule visibility
+- Live stream status
+- Event dates
+- YouTube video integration
+
+## Installation & Local Development
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/[username]/alachuakirtan.git
-   ```
+```bash
+git clone [repository-url]
+cd alachuakirtan
+```
 
-2. No build process is required as this is a static website.
+1. Local development options:
+   - Using Python: `python -m http.server 8000`
+   - Using VS Code: Install "Live Server" extension
+   - Using Node.js: `npx http-server`
 
-3. Start a local development server:
+1. Open `http://localhost:8000` in your browser
 
-   Using Python (recommended):
+## Usage
 
-   ```bash
-   # If you have Python 3:
-   python -m http.server 8000
-   ```
+### Configuration File
 
-   Alternative methods:
-   - Using Visual Studio Code: Install the "Live Server" extension and click "Go Live"
-   - Using Node.js: Install `http-server` globally via npm:
+Edit `config/config.js` to modify site behavior:
 
-     ```bash
-     npm install -g http-server
-     http-server
-     ```
+```javascript
+const config = {
+    IS_LIVE: false,        // Toggle live stream
+    HAS_SCHEDULE: true,    // Toggle schedule display
+    HAS_SUNDAY: false      // Toggle Sunday schedule
+};
+```
 
-4. View the website:
-   - Open your browser and navigate to `http://localhost:8000`
-   - The website should now be running locally
-   - Any changes you make to the files will be reflected when you refresh the browser
+### Custom Styling
 
-5. Testing changes:
-   - Edit HTML, CSS, or JavaScript files using your preferred code editor
-   - Save the files
-   - Refresh your browser to see the changes
-   - Use browser developer tools (F12) to debug and inspect elements
+Add custom styles in `css/custom.css` to override default styling.
 
 ## Contributing
 
-We welcome contributions! Here's how you can help:
-
 1. Fork the repository
-2. Create a new branch for your feature
-3. Make your changes
-4. Submit a pull request
+2. Create a feature branch: `git checkout -b feature/YourFeature`
+3. Commit changes: `git commit -am 'Add YourFeature'`
+4. Push to branch: `git push origin feature/YourFeature`
+5. Submit a Pull Request
 
-### Development Guidelines
+### Code Style Guidelines
 
-- Maintain responsive design principles
-- Test across different browsers and devices
-- Follow existing code style and structure
-- Update documentation for significant changes
+- Follow existing HTML/CSS/JS formatting
+- Comment complex functionality
+- Test responsive design
+- Validate HTML/CSS
 
-## File Structure Details
+## Testing
 
-- `index.html`: Main landing page with event information
-- `audio.html`: Houses audio content and recordings
-- `singers.xhtml`: Information about kirtan singers
-- `css/`: Contains all styling files
-  - `animations.css`: Custom animations
-  - `style.css`: Main stylesheet
-  - `custom.css`: Custom overrides
-- `js/`: JavaScript files
-  - `custom.js`: Site-specific functionality
-- `config/`: Configuration files for the website
+- Test in multiple browsers
+- Verify responsive design using dev tools
+- Check all forms and interactive elements
+- Validate links and resources
+
+## Deployment
+
+1. Ensure all configuration is set correctly
+2. Test all functionality in a staging environment
+3. Optimize images and assets
+4. Update meta tags and SEO information
+5. Deploy to production server
 
 ## License
 
-This project uses the Creative Commons Attribution 3.0 License.
+This project is licensed under the Creative Commons Attribution 3.0 License - see [LICENSE](https://creativecommons.org/licenses/by/3.0/) for details.
 
-## Credits
+## Acknowledgments
 
-- Bootstrap Template: Worthy by HtmlCoder
-- Fonts: Google Fonts, Font Awesome
-- Various jQuery plugins (see WORTHY.md for full credits)
+- Template: Worthy by HtmlCoder
+- Icons: Font Awesome
+- Fonts: Google Fonts
+- Framework: Bootstrap
+- Community contributors and volunteers
 
-## Contact
+## Support
 
-For questions or suggestions, please use GitHub Issues or contact the maintainers.
+For support, please:
+
+1. Check existing [documentation](docs/)
+2. Contact the maintainers
+3. Submit an issue
+
+---
+Last updated: [Current Date]
