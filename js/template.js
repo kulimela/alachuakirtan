@@ -110,11 +110,5 @@
 			});
 		}
 
-<<<<<<< HEAD
 	}); // End document ready
 })(this.jQuery);
-=======
-        document.querySelectorAll('.scrollspy li').forEach(section => observer.observe(section));
-    }
-});
->>>>>>> 86d73395e41724f2dadef8e16d6b85750845182d
