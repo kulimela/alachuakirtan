@@ -12,6 +12,26 @@ This is the official website for the Festival of the Holy Name event held in Ala
 - Contact form for inquiries
 - Donation capabilities through PayPal
 - Social media integration (Facebook and YouTube)
+- Dynamic radio player for audio streaming
+
+## Radio Player Feature
+
+The website includes an interactive radio player that allows users to stream audio tracks from the festival. The player provides the following functionalities:
+
+- **Play/Pause**: Start or pause the current track.
+- **Skip**: Move to the next or previous track in the playlist.
+- **Progress Bar**: Visual representation of the track's progress.
+- **Time Display**: Shows the current and total duration of the track.
+- **Volume Control**: Adjust the playback volume.
+- **Shuffle and Repeat**: Options to shuffle the playlist or repeat tracks.
+
+### How to Use
+
+1. Navigate to the `Audio` page on the website.
+2. Use the player controls to manage playback.
+3. Click on any track title in the playlist to start playing that track.
+
+The player is designed to provide a seamless and enjoyable listening experience, with easy-to-use controls and a modern interface.
 
 ## Prerequisites
 
