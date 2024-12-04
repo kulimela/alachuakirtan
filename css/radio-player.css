@@ -57,12 +57,21 @@
 }
 
 .btn-mode:hover {
-  color: #eb5e33;
+  color: #e75113;
   transform: scale(1.1);
 }
 
 .btn-mode.active {
-  color: #eb5e33;
+  color: #e75113;
+}
+
+.btn-mode.active i {
+  color: #e75113 !important;
+}
+
+#shuffleBtn.active i,
+#repeatBtn.active i {
+  color: #e75113 !important;
 }
 
 .player-controls {
