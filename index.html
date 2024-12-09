@@ -144,6 +144,8 @@
 			<script>
 				// Check if IS_LIVE is true before displaying the HTML
 				if (config.IS_LIVE) {
+					// Add body class: is-live
+					document.body.classList.add("is-live");
 					document.write(`
 			<div class="banner-video">
 				<div class="container">
