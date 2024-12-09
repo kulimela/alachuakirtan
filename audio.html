@@ -25,6 +25,7 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Custom css -->
     <link href="css/custom.css" rel="stylesheet">
+    <link href="css/radio-player.css" rel="stylesheet">
   </head>
 
   <body class="no-trans page-audio">
@@ -120,16 +121,73 @@
       <div class="container">
         <div class="col-md-12">
           <div class="col-md-12">
-            <p>
-              <em>Instructions for downloading audio tracks: </em>
-            </p>
-            <p>
-              1. Click with the right mouse button on any of the audio links below.<br />
-              2. Select "Save Link As..." (in Safari select "Download Linked File As...")<br />
-              3. Choose where to save the MP3 file on your computer.<br />
-              4. Save the file.<br />
-              5. Repeat for all tracks you want to download.
-            </p>
+            
+            <!-- Radio Player start -->
+            <div class="radio-player-container">
+              <div class="player-header">
+                <h2><i class="fa fa-music"></i> 🍯🐝🌺📿🦚 The Holy Name Radio - Alachua 24/hr Kirtan 🦚📿🌺🐝🍯 🌕</h2>
+              </div>
+
+              <div class="now-playing">
+                <div class="track-label">Now Playing</div>
+                <div class="track-title"></div>
+              </div>
+
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+                <div class="progress-handle"></div>
+              </div>
+
+              <div class="playback-time">
+                <span class="current-time">0:00</span>
+                <span class="time-separator">/</span>
+                <span class="total-time">0:00</span>
+              </div>
+
+              <div class="player-controls">
+                <button id="prevBtn" class="btn btn-control" onclick="window.kirtanPlayer.playPrevious()" title="Previous">
+                  <i class="fa fa-step-backward"></i>
+                </button>
+                <button id="playPauseBtn" class="btn btn-control btn-play" onclick="window.kirtanPlayer.togglePlay()" title="Play/Pause">
+                  <i class="fa fa-play"></i>
+                </button>
+                <button id="nextBtn" class="btn btn-control" onclick="window.kirtanPlayer.playNext()" title="Next">
+                  <i class="fa fa-step-forward"></i>
+                </button>
+              </div>
+
+              <div class="secondary-controls">
+                <div class="volume-control">
+                  <i class="fa fa-volume-up"></i>
+                  <div class="volume-slider">
+                    <input type="range" id="volumeSlider" min="0" max="100" value="100" 
+                           oninput="window.kirtanPlayer.setVolume(this.value)">
+                  </div>
+                </div>
+
+                <button class="btn btn-mode" id="shuffleBtn" onclick="window.kirtanPlayer.toggleShuffle()" title="Shuffle">
+                  <i class="fa fa-random"></i>
+                </button>
+                <button class="btn btn-mode" id="repeatBtn" onclick="window.kirtanPlayer.toggleRepeat()" title="Repeat">
+                  <i class="fa fa-repeat"></i>
+                </button>
+              </div>
+
+              <!-- Playlist Panel (hidden by default) -->
+              <div class="playlist-panel" id="playlistPanel">
+                <div class="playlist-header">
+                  <h3>Playlist</h3>
+                  <button class="btn btn-mode" onclick="window.kirtanPlayer.togglePlaylist()">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+                <div class="playlist-content" id="playlistContent">
+                  <!-- Playlist items will be dynamically inserted here -->
+                </div>
+              </div>
+            </div>
+            <!-- Radio Player end -->
+
           </div>
           <div class="col-md-12">
             <div class="space">
@@ -844,7 +902,7 @@
                         </p>
                         <p>
                           <strong>22 November 2010</strong><br />
-                        <a href="http://yoga.krishna.com/alachuakirtan/pre-fhn2010/04_Radhika_Dasi-Hare_Krishna_Maha_Mantra_(22_November_2010).mp3">Radhika Dasi - Hare Krishna Maha Mantra</a><br />
+                        <a href="http://yoga.krishna.com/alachuakirtan/pre-fhn2010/04_Radhika_Dasi-Hare_Krishna_Maha_Mantra_(22_November_2010).mp3">Radhika Dasi - Hare Krishna Maha-mantra</a><br />
                         <a href="http://yoga.krishna.com/alachuakirtan/pre-fhn2010/05_Madhava_Dasa-Hare_Krishna_Maha_Mantra_(22_November_2010).mp3">Madhava Dasa - Krishna Keshava followed by Hare Krishna Maha Mantra</a>
                         </p>
                         <p>
@@ -926,6 +984,7 @@ ga('send', 'pageview');
 
     <!-- Custom Scripts -->
     <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Radio Player Script -->
+<script type="text/javascript" src="js/radio-player.js"></script>
   </body>
 </html>
-
