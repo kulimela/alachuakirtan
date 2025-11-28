@@ -7,7 +7,7 @@ var config = {
 		YEAR: "2025",
 		YOUTUBE: "https://www.youtube.com/embed/videoseries?list=PLaiGaaGnFr3VGG8doTLQLE1StbjHUkfn4",
 	},
-	IS_LIVE: false,
+	IS_LIVE: true,
 	HAS_SCHEDULE: true,
 	HAS_SUNDAY: true,
 };
